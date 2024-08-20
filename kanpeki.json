@@ -1,0 +1,12 @@
+{
+  "$schema": "https://kanpeki.vercel.app/schema.json",
+  "rsc": false,
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "src/styles/globals.css"
+  },
+  "aliases": {
+    "components": "~/components",
+    "utils": "~/utils"
+  }
+}

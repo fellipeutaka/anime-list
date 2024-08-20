@@ -1,0 +1,20 @@
+{
+  "cSpell.words": [
+    "biomejs",
+    "clsx",
+    "Crunchyroll",
+    "rsbuild",
+    "tailwindcss",
+    "zustand"
+  ],
+  "editor.defaultFormatter": "biomejs.biome",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
