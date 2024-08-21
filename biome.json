@@ -30,6 +30,9 @@
             "functions": ["clsx", "twMerge", "cn", "tv"]
           }
         }
+      },
+      "style": {
+        "useNamingConvention": "off"
       }
     }
   },
@@ -40,16 +43,6 @@
         "rules": {
           "style": {
             "noDefaultExport": "off"
-          }
-        }
-      }
-    },
-    {
-      "include": ["./tailwind.config.ts", "./src/components/ui/icons.tsx"],
-      "linter": {
-        "rules": {
-          "style": {
-            "useNamingConvention": "off"
           }
         }
       }

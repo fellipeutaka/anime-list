@@ -25,7 +25,7 @@ export function AnimeItem({ anime }: AnimeItemProps) {
       ref={setNodeRef}
       style={{ transform: CSS.Transform.toString(transform), transition }}
       data-dragging={isDragging}
-      className="grid grid-cols-[auto,auto,1fr] items-center gap-6 rounded-xl border bg-card p-4 text-card-foreground shadow data-[dragging=true]:opacity-50"
+      className="grid items-center gap-6 rounded-xl border bg-card p-4 text-card-foreground shadow data-[dragging=true]:opacity-50 sm:grid-cols-[auto,auto,1fr]"
     >
       <Button
         {...listeners}
@@ -43,10 +43,10 @@ export function AnimeItem({ anime }: AnimeItemProps) {
         className="w-full select-none rounded-md"
       />
 
-      <div className="ml-2 flex h-2/3 flex-col justify-between gap-2">
+      <div className="ml-2 flex flex-col justify-between gap-2 sm:h-2/3">
         <h3 className="font-medium text-lg">{anime.title}</h3>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <span className="text-muted-foreground text-sm">{anime.meta}</span>
           <a
             href={anime.link}
@@ -54,7 +54,8 @@ export function AnimeItem({ anime }: AnimeItemProps) {
             rel="noopener noreferrer"
             className={ButtonStyles({ className: "gap-2" })}
           >
-            <Icons.Play className="size-4" /> Watch on Crunchyroll
+            <Icons.Play className="size-4" />
+            <span>Watch on Crunchyroll</span>
             <Icons.Crunchyroll className="size-4 text-orange-500" />
           </a>
         </div>
